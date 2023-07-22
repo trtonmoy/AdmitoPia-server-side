@@ -1,0 +1,80 @@
+[
+  {
+    "image": "https://example.com/college1.jpg",
+    "college_name": "Nova Crest University",
+    "admission_dates": "August 2023",
+    "events": ["Orientation Day", "Career Fair", "Research Symposium"],
+    "research_history": [
+      "Exploring Artificial Intelligence",
+      "Advancements in Renewable Energy"
+    ],
+    "sports": ["Football", "Basketball", "Cricket"]
+  },
+  {
+    "image": "https://example.com/college1.jpg",
+    "college_name": "Elysium University",
+    "admission_dates": "December 2023",
+    "events": ["Orientation Day", "Career Fair", "Research Symposium"],
+    "research_history": [
+      "Data Science and Analytics Forum",
+      "Sustainability in Fashion Showcase"
+    ],
+    "sports": [
+      "Triathlon Triumph",
+      "Hiking Adventure Race",
+      "Skateboard Slam Jam"
+    ]
+  },
+  {
+    "image": "https://example.com/college1.jpg",
+    "college_name": "Stellar Academy of Arts and Sciences",
+    "admission_dates": "October 2023",
+    "events": ["Orientation Day", "Career Fair", "Research Symposium"],
+    "research_history": [
+      "Advancing Medical Breakthroughs",
+      "Cybersecurity and Data Privacy Summit"
+    ],
+    "sports": ["Football", "Basketball", "Cricket"]
+  },
+  {
+    "image": "https://example.com/college1.jpg",
+    "college_name": "Solstice Institute of Technology",
+    "admission_dates": "September 2023",
+    "events": ["Orientation Day", "Career Fair", "Research Symposium"],
+    "research_history": [
+      "Future of Transportation Showcase",
+      "Women in STEM Symposium"
+    ],
+    "sports": ["Golf Classic", "Ultimate Frisbee Fiesta", "Rugby Rumble"]
+  },
+  {
+    "image": "https://example.com/college1.jpg",
+    "college_name": "Azurehaven College",
+    "admission_dates": "November 2023",
+    "events": ["Orientation Day", "Career Fair", "Research Symposium"],
+    "research_history": [
+      "Eco-Friendly Cities Forum",
+      "Blockchain and Cryptocurrency Expo"
+    ],
+    "sports": [
+      "Table Tennis Tussle",
+      "Badminton Battle Royale",
+      "Martial Arts Mayhem"
+    ]
+  },
+  {
+    "image": "https://example.com/college1.jpg",
+    "college_name": "Celestial University",
+    "admission_dates": "August 2023",
+    "events": ["Orientation Day", "Career Fair", "Research Symposium"],
+    "research_history": [
+      "Beyond the Horizon: Space Exploration Symposium",
+      "Innovations in Sustainable Agriculture"
+    ],
+    "sports": [
+      "Tennis Masters Open",
+      "Volleyball Vortex",
+      "Swim Fest: Aquatic Championships"
+    ]
+  }
+]
