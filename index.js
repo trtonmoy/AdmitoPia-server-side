@@ -27,6 +27,7 @@ async function startServer() {
     await client.connect();
 
     const collegesCollection = client.db("AdmitoPia").collection("colleges");
+    const admissionCollection = client.db("AdmitoPia").collection("admission");
 
     // Colleges Endpoint - Get all colleges
     app.get("/colleges", async (req, res) => {
@@ -57,6 +58,42 @@ async function startServer() {
         console.error("Error fetching college:", error);
         res.status(500).send("Something went wrong!");
       }
+    });
+
+    app.get("/admission/enroll/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+
+      const options = {
+        // Include only the `title` and `imdb` fields in the returned document
+        projection: {
+          image: 1,
+          college_name: 1,
+          admission_dates: 1,
+          rating: 1,
+        },
+      };
+
+      const result = await collegesCollection.findOne(query, options);
+      res.send(result);
+    });
+
+    // ---------Admission ---------------
+
+    app.get("/admission", async (req, res) => {
+      let query = {};
+      if (req.query?.email) {
+        query = { email: req.query.email };
+      }
+      const result = await admissionCollection.find(query).toArray();
+      res.send(result);
+    });
+
+    app.post("/admission", async (req, res) => {
+      const admission = req.body;
+      // console.log(admission);
+      const result = await admissionCollection.insertOne(admission);
+      res.send(result);
     });
 
     // Send a ping to confirm a successful connection
